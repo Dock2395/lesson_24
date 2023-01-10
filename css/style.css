@@ -1,0 +1,24 @@
+.wrapper {
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+	padding: 50px;
+	display: flex; 
+   flex-direction: column; 
+}
+
+.wrapper > main{ 
+   flex-grow: 1; 
+} 
+
+ul{
+	margin-bottom: 50px;
+}
+
+li{
+	margin-top: 25px;
+}
+
+p{
+	margin-bottom: 10px;
+}

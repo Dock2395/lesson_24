@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header></header>
+		<main>
+			<ul>Відео №1. Функции в JAVASCRIPT. Стрелочные функции, рекурсия, планирование: setTimeout и setInterval.
+				<li>
+					Завдання №1 - Коля!
+				</li>
+				<li>
+					Завдання №2 - Вірно
+				</li>
+				<li>
+					Завдання №3 - Дану функцію можна викликати тільки нижче по коду після місця де її присовоєно змінній.
+				</li>
+				<li>
+					Завдання №4
+					<p>
+						let showMessage
+						if (2 > 1) {
+							showMessage = function () {
+								console.log('Повідомлення');
+							}
+						}
+						showMessage();
+					</p>
+				</li>
+			</ul>
+			<ul> Відео №2. Массивы в JAVASCRIPT. Методы массивов. Редактирование, поиск, сортировка. Уроки JavaScript с нуля
+				<li>
+					Завдання №1 - 4
+				</li>
+				<li>
+					Завдання №2
+					<p>
+						let users = ['Ваня', 'Іштван',];
+						users.push('Оля');
+					</p>
+					<p>
+						function changeName (masWithNames, beforeName, afterName) { 
+							if (masWithNames.includes(beforeName)) { 
+								let numberItemBeforeName = masWithNames.indexOf(beforeName,);
+								masWithNames.splice(numberItemBeforeName, 1, afterName);
+									}
+							};
+						changeName(users, 'Іштван', 'Петро');
+					</p>
+					<p>
+						let removed = users.splice(0, 1)
+						console.log(removed);
+					</p>
+					<p>
+						users.splice(0, 0, "Маша", "Паша",)
+							console.log(users);
+					</p>
+				</li>
+				<li>
+					Завдання №3
+					<p>
+						let removed;
+						let arr = ['Ваня', 'Іштван', 'Оля',];
+					</p>
+					<p>
+						function removedName  (masWithNames, delName) { 
+							if (masWithNames.includes(delName)) { 
+								let numberItemDelName = masWithNames.indexOf(delName);
+								removed = masWithNames.splice(numberItemDelName, 1);
+									}
+							};
+					</p>
+					<p>
+						removedName(arr, 'Іштван');
+						console.log(removed);
+						console.log(arr);
+					</p>
+				</li>
+				<li>
+					Завдання №4
+					<p>
+						let str = 'Ваня, Іштван, Оля';
+						let mas = str.split(',');
+						console.log(mas );
+					</p>
+				</li>
+				<li>
+					Завдання №5 -якщо назву змінної до якої застосовується метод вказати вірно ( не arrTwo а arr), тоді повертає перше значення з масиву та undefined. previousValue = undefined.
+				</li>
+			</ul>
+			<ul> Відео №3. JavaScript Document object model (DOM) за час. Изменение HTML CSS. Атрибуты и свойства. Окружение.
+				<li>
+					Завдання №1
+					<div data-say-hi="yes">Привіт</div>
+					<p>
+						const findDataSayHi = document.querySelector('[data-say-hi]');
+						const valueDataSayHi = findDataSayHi.getAttribute('data-say-hi');
+					</p>
+				</li>
+				<li class="yonchi">
+					Завдання №2
+					<ul>
+						<li>Корчи</li>
+						<li>Йончи</li>
+					</ul>
+					<p>
+						const getClassWuthYonchi = document.querySelectorAll('.yonchi>ul>li');
+						const getYonchi = getClassWuthYonchi[1];
+						console.log(getYonchi);
+					</p>
+				</li>
+				<li>
+					Завдання №3
+					<div class="like"></div>
+					<div class="subscribe"></div>
+					<div class="like subscribe"></div>
+					<p>
+						const colLike = document.querySelectorAll('.like');
+						console.log(colLike)
+					</p>
+				</li>
+				<li>
+					Завдання №4
+					<p>Вставиться в кінець списку</p>
+				</li>
+			</ul>
+			<ul> Відео №4. JavaScript размеры прокрутка и координаты элементов на странице и окна браузера.
+				<li>
+					Завдання №1. Узнать ширину полосы прокрутки
+					<p>
+						const mainElement = document.documentElement;
+						<br>
+						const widthWithoutScroll = mainElement.clientWidth;
+						<br>
+						console.log(widthWithoutScroll);
+						<br>
+						const widthWithScroll = window.innerWidth;
+						<br>
+						console.log(widthWithScroll);
+						<br>
+						const scroll = widthWithScroll - widthWithoutScroll;
+						<br>
+						console.log(scroll);
+					</p>
+				</li>
+				<li>
+					Завдання №2. Заставьте браузер прокрутиться на 100px сверху
+					спустя секунду после открытия страницы
+					<p>
+						window.scrollTo({ 
+							top: 100, 
+							let: 0, 
+							behavior: "smooth" 
+						}); 
+					</p>
+				</li>
+				<li>
+					Завдання №3.Получите координаты любых трех элементов на странице
+					<p>
+						const elem = document.elementFromPoint(50, 0); 
+						console.log(elem);
+						<br>
+						const elemOne = document.elementFromPoint(50, 50); 
+						console.log(elemOne);
+						<br>
+						const elemTwo = document.elementFromPoint(10, 70); 
+						console.log(elemTwo); 
+					</p>
+				</li>
+			</ul>
+		</main>
+	
+		<footer></footer>
+	</div>
+	<script src="js/js.js"></script>
+</body>
+
+</html>

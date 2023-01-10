@@ -7,6 +7,10 @@
    flex-direction: column; 
 }
 
+body{
+	line-height: 26px;
+}
+
 .wrapper > main{ 
    flex-grow: 1; 
 } 

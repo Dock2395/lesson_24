@@ -125,9 +125,11 @@ window.scrollTo({
 */
 
 //Завдання №3
+/*
 const elem = document.elementFromPoint(50, 0); 
 console.log(elem);
 const elemOne = document.elementFromPoint(50, 50); 
 console.log(elemOne);
 const elemTwo = document.elementFromPoint(10, 70); 
-console.log(elemTwo); 
+console.log(elemTwo);
+*/

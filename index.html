@@ -15,7 +15,8 @@
 	<div class="wrapper">
 		<header></header>
 		<main>
-			<ul><h2>Відео №1. Функції у JAVASCRIPT. Стрілецькі функції, рекурсія, планування: setTimeout і setInterval.</h2>
+			<ul>
+				<h2>Відео №1. Функції у JAVASCRIPT. Стрілецькі функції, рекурсія, планування: setTimeout і setInterval.</h2>
 				<li>
 					Завдання №1 - Коля!
 				</li>
@@ -30,15 +31,17 @@
 					<p>
 						let showMessage
 						if (2 > 1) {
-							showMessage = function () {
-								console.log('Повідомлення');
-							}
+						showMessage = function () {
+						console.log('Повідомлення');
+						}
 						}
 						showMessage();
 					</p>
 				</li>
 			</ul>
-			<ul> <h2>Відео №2. Масиви в JAVASCRIPT. Методи масивів. Редагування, пошук, сортування. Уроки JavaScript з нуля</h2>
+			<ul>
+				<h2>Відео №2. Масиви в JAVASCRIPT. Методи масивів. Редагування, пошук, сортування. Уроки JavaScript з нуля
+				</h2>
 				<li>
 					Завдання №1 - 4
 				</li>
@@ -49,12 +52,12 @@
 						users.push('Оля');
 					</p>
 					<p>
-						function changeName (masWithNames, beforeName, afterName) { 
-							if (masWithNames.includes(beforeName)) { 
-								let numberItemBeforeName = masWithNames.indexOf(beforeName,);
-								masWithNames.splice(numberItemBeforeName, 1, afterName);
-									}
-							};
+						function changeName (masWithNames, beforeName, afterName) {
+						if (masWithNames.includes(beforeName)) {
+						let numberItemBeforeName = masWithNames.indexOf(beforeName,);
+						masWithNames.splice(numberItemBeforeName, 1, afterName);
+						}
+						};
 						changeName(users, 'Іштван', 'Петро');
 					</p>
 					<p>
@@ -63,7 +66,7 @@
 					</p>
 					<p>
 						users.splice(0, 0, "Маша", "Паша",)
-							console.log(users);
+						console.log(users);
 					</p>
 				</li>
 				<li>
@@ -73,12 +76,12 @@
 						let arr = ['Ваня', 'Іштван', 'Оля',];
 					</p>
 					<p>
-						function removedName  (masWithNames, delName) { 
-							if (masWithNames.includes(delName)) { 
-								let numberItemDelName = masWithNames.indexOf(delName);
-								removed = masWithNames.splice(numberItemDelName, 1);
-									}
-							};
+						function removedName (masWithNames, delName) {
+						if (masWithNames.includes(delName)) {
+						let numberItemDelName = masWithNames.indexOf(delName);
+						removed = masWithNames.splice(numberItemDelName, 1);
+						}
+						};
 					</p>
 					<p>
 						removedName(arr, 'Іштван');
@@ -95,10 +98,13 @@
 					</p>
 				</li>
 				<li>
-					Завдання №5 -якщо назву змінної до якої застосовується метод вказати вірно ( не arrTwo а arr), тоді повертає перше значення з масиву та undefined. previousValue = undefined.
+					Завдання №5 -якщо назву змінної до якої застосовується метод вказати вірно ( не arrTwo а arr), тоді
+					повертає перше значення з масиву та undefined. previousValue = undefined.
 				</li>
 			</ul>
-			<ul> <h2>Відео №3. JavaScript Document object model (DOM) за годину. Зміна HTML CSS. Атрибути та властивості. Оточення.</h2>
+			<ul>
+				<h2>Відео №3. JavaScript Document object model (DOM) за годину. Зміна HTML CSS. Атрибути та властивості.
+					Оточення.</h2>
 				<li>
 					Завдання №1
 					<div data-say-hi="yes">Привіт</div>
@@ -134,7 +140,8 @@
 					<p>Вставиться в кінець списку</p>
 				</li>
 			</ul>
-			<ul> <h2>Відео №4. JavaScript розміри прокручування та координати елементів на сторінці та вікна браузера.</h2>
+			<ul>
+				<h2>Відео №4. JavaScript розміри прокручування та координати елементів на сторінці та вікна браузера.</h2>
 				<li>
 					Завдання №1. Узнать ширину полосы прокрутки
 					<p>
@@ -157,29 +164,47 @@
 					Завдання №2. Заставьте браузер прокрутиться на 100px сверху
 					спустя секунду после открытия страницы
 					<p>
-						window.scrollTo({ 
-							top: 100, 
-							let: 0, 
-							behavior: "smooth" 
-						}); 
+						window.scrollTo({
+						top: 100,
+						let: 0,
+						behavior: "smooth"
+						});
 					</p>
 				</li>
 				<li>
 					Завдання №3.Получите координаты любых трех элементов на странице
 					<p>
-						const elem = document.elementFromPoint(50, 0); 
+						const elem = document.elementFromPoint(50, 0);
 						console.log(elem);
 						<br>
-						const elemOne = document.elementFromPoint(50, 50); 
+						const elemOne = document.elementFromPoint(50, 50);
 						console.log(elemOne);
 						<br>
-						const elemTwo = document.elementFromPoint(10, 70); 
-						console.log(elemTwo); 
+						const elemTwo = document.elementFromPoint(10, 70);
+						console.log(elemTwo);
 					</p>
 				</li>
 			</ul>
+			<ul>
+				<h2>Урок 25</h2>
+				<li>
+					Пишемо форму пошуку, яка відкривається по кліку на іконку, а закривається по кліку на будь-яке місце
+					сторінки, крім самої форми. Також закрити форму можна за клавішею ескейп (Esc) на клавіатурі. Для поля
+					введення запиту додаємо лічильник символів.
+					<p></p>
+					<div class="form-wrap">
+						<button type="button" class="button">
+							<span>Search</span>
+						</button>
+					<form class="search-form">
+						<input type="text" name="text" class="search" placeholder="Search here!">
+						<input type="submit" name="submit" class="submit" value="Search">
+					</form>
+					</div>
+				</li>
+			</ul>
 		</main>
-	
+
 		<footer></footer>
 	</div>
 	<script src="js/js.js"></script>

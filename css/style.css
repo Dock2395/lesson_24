@@ -31,3 +31,34 @@ li{
 p{
 	margin-bottom: 10px;
 }
+
+.form-wrap{
+	display: inline-block;
+}
+
+.button{
+	display: block;
+	width: 150px;
+	height: 30px;
+	border: 1px solid;
+}
+
+.search-form{
+	display: none;
+}
+
+.search-form_active{
+	display: block;
+}
+
+	input{
+	padding:4px 10px;
+	border: 1px solid;
+	font-size:16px;
+	}
+
+	.submit{
+	width: 70px;
+	background-color: #1c87c9;
+	color:#ffffff;
+	}

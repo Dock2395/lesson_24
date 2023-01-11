@@ -61,7 +61,7 @@ function removedName  (masWithNames, delName) {
 			}
 	};
 	removedName(arr, 'Іштван');
-   console.log(removed);
+	console.log(removed);
 	console.log(arr);
 */
 
@@ -133,3 +133,17 @@ console.log(elemOne);
 const elemTwo = document.elementFromPoint(10, 70); 
 console.log(elemTwo);
 */
+
+//Урок 25
+
+const searchForm = document.querySelector('.search-form');
+document.addEventListener("click", form);
+
+function form(event) {
+	if (event.target.closest('.button')) {
+		searchForm.classList.toggle('search-form_active');
+	}
+	if (!event.target.closest('.form-wrap')) {
+		searchForm.classList.remove('search-form_active');
+	}
+}

@@ -188,18 +188,55 @@
 			<ul>
 				<h2>Урок 25</h2>
 				<li>
-					Пишемо форму пошуку, яка відкривається по кліку на іконку, а закривається по кліку на будь-яке місце
-					сторінки, крім самої форми. Також закрити форму можна за клавішею ескейп (Esc) на клавіатурі. Для поля
-					введення запиту додаємо лічильник символів.
-					<p></p>
+					<p>
+						Пишемо форму пошуку, яка відкривається по кліку на іконку, а закривається по кліку на будь-яке місце
+						сторінки, крім самої форми. Також закрити форму можна за клавішею ескейп (Esc) на клавіатурі. Для поля
+						введення запиту додаємо лічильник символів.
+					</p>
 					<div class="form-wrap">
 						<button type="button" class="button">
 							<span>Search</span>
 						</button>
 					<form class="search-form">
-						<input type="text" name="text" class="search" placeholder="Search here!">
+							<input type="text" name="text" class="search" placeholder="Search here!">
+							<div class="search-counter">Введено <span></span> символів</div>
 						<input type="submit" name="submit" class="submit" value="Search">
 					</form>
+					</div>
+					<div>
+						const searchForm = document.querySelector('.search-form');
+						<br>
+						document.addEventListener("click", form);
+						<br>
+						function form(event) {
+							if (event.target.closest('.button')) {
+								searchForm.classList.toggle('search-form_active');
+							}
+							if (!event.target.closest('.form-wrap')) {
+								searchForm.classList.remove('search-form_active');
+							}
+						}
+						<br>
+						document.addEventListener('keyup', function (event) {
+							if (event.code === 'Escape') {
+								searchForm.classList.remove('search-form_active');
+							}
+						})
+						<br>
+						const searchItem = document.querySelector('.search');
+						<br>
+						const searchCounter = document.querySelector('.search-counter span');
+						<br>
+						searchItem.addEventListener("keyup", searchTextCounter);
+						<br>
+						searchItem.addEventListener("keydown", function (event) {
+							if (event.repeat) searchTextCounter();
+						});
+						<br>
+						function searchTextCounter() {
+							const textCounter = searchItem.value.length;
+							searchCounter.innerHTML = textCounter;
+						}
 					</div>
 				</li>
 			</ul>

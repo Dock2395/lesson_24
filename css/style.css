@@ -41,6 +41,7 @@ p{
 	width: 150px;
 	height: 30px;
 	border: 1px solid;
+	margin-bottom: 20px;
 }
 
 .search-form{
@@ -48,7 +49,12 @@ p{
 }
 
 .search-form_active{
-	display: block;
+	display: inline-block;
+}
+
+.search-wrap{
+	display: flex;
+	flex-direction: column;
 }
 
 	input{
@@ -61,4 +67,8 @@ p{
 	width: 70px;
 	background-color: #1c87c9;
 	color:#ffffff;
+	}
+
+	.search-counter{
+		display: block;
 	}

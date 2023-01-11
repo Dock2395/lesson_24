@@ -147,3 +147,22 @@ function form(event) {
 		searchForm.classList.remove('search-form_active');
 	}
 }
+
+document.addEventListener('keyup', function (event) {
+	if (event.code === 'Escape') {
+		searchForm.classList.remove('search-form_active');
+	}
+})
+
+const searchItem = document.querySelector('.search');
+const searchCounter = document.querySelector('.search-counter span');
+
+searchItem.addEventListener("keyup", searchTextCounter);
+searchItem.addEventListener("keydown", function (event) {
+	if (event.repeat) searchTextCounter();
+});
+
+function searchTextCounter() {
+	const textCounter = searchItem.value.length;
+	searchCounter.innerHTML = textCounter;
+}
